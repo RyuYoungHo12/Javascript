@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>2.JSON</title>
+        <!-- 
+            날짜 : 2023/07/18
+            이름 : 류영호
+            내용 : 자바스크립트 JSON 실습하기
+        -->
+    </head>
+    <body>
+        <h3>2.JSON</h3>
+        <script>
+            // JSON 객체
+            const user = {
+                "uid":"a101",
+                "name":"김유신",
+                "hp":"010-2121-0011",
+                "age": 25
+            };
+
+            document.write('user : ' + user + '<br>');
+            document.write('아이디 : ' + user.uid + '<br>');
+            document.write('이름 : ' + user.name + '<br>');
+            document.write('휴대폰 : ' + user.hp + '<br>');
+            document.write('나이 : ' + user.age + '<br>');
+
+            for(let k in user){
+                document.write(k + ' : ' + user[k] + '<br>');
+            }
+
+            // JSON 객체 배열
+            const jsonData = {
+                "users": [
+                    
+                ]
+            }
+
+        </script>
+    </body>
+</html>
